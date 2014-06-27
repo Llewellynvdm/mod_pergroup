@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>Per Group</name>
+	<author>Vast Development Method</author>
+	<creationDate>February 2014</creationDate>
+	<copyright>Copyright VDM</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>support@vdm.io</authorEmail>
+	<authorUrl>www.vdm.io</authorUrl>
+	<version>1.0.0</version>
+	<description>A Per Group Module Tool</description>
+		
+	<files>
+		<filename module="mod_pergroup">mod_pergroup.php</filename>
+		<filename>pergroup.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_pergroup.xml</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_pergroup.ini</language>
+		<language tag="en-GB">administrator/language/en-GB/en-GB.mod_pergroup.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">	
+				
+				
+				<field 	name="group0" type="usergroup" multiple="true"
+						label="MOD_PERGROUP_SELECT_PUBLIC_GROUP"
+						default="0" 
+				/>
+				<field name="group0-active" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PERGROUP_ACTIVE_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field name="group0-type" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PERGROUP_VALIDATION_TYPE" description="">
+  					<option value="0">MOD_PERGROUP_NOT_IN_GROUP</option>
+  					<option value="1">MOD_PERGROUP_IN_GROUP</option>
+				</field>
+				<field name="group0-url" type="url" default="" label="MOD_PERGROUP_PUBLIC_REDIRECT_URL" description="" size="40" />
+				<field name="group0-menu" type="menuitem" default="" label="MOD_PERGROUP_PUBLIC_REDIRECT_MENU" description="" />
+				<field name="group0-redirect" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_REDIRECT_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field type="spacer" name="myspacer_0" label="MOD_PERGROUP_HTML_INPUT" />
+				<field name="group0-notice" label="" type="editor" width="95%" height="300" filter="safehtml"/>
+				<field type="spacer" name="spasor_0" label="MOD_PERGROUP_CSS_INPUT" />
+				<field name="group0-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacer_0" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
+				<field name="group0-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacur_0" label="MOD_PERGROUP_PHP_INPUT"/>
+				<field name="group0-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="line0" hr="true" />
+				
+				<field 	name="group1" type="usergroup" multiple="true"
+						label="MOD_PERGROUP_SELECT_GROUP"
+						default="0" 
+				/>
+				<field name="group1-active" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_ACTIVE_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field name="group1-type" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PERGROUP_VALIDATION_TYPE" description="">
+  					<option value="0">MOD_PERGROUP_NOT_IN_GROUP</option>
+  					<option value="1">MOD_PERGROUP_IN_GROUP</option>
+				</field>
+				<field name="group1-url" type="url" default="" label="MOD_PERGROUP_REDIRECT_GROUP_URL" description="" size="40" />
+				<field name="group1-menu" type="menuitem" default="" label="MOD_PERGROUP_REDIRECT_GROUP_MENU" description="" />
+				<field name="group1-redirect" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_REDIRECT_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>	
+				<field type="spacer" name="myspacer_1" label="MOD_PERGROUP_HTML_INPUT" />	
+				<field name="group1-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field type="spacer" name="spasor_1" label="MOD_PERGROUP_CSS_INPUT" />
+				<field name="group1-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacer_1" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
+				<field name="group1-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacur_1" label="MOD_PERGROUP_PHP_INPUT"/>
+				<field name="group1-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="line1" hr="true" />
+				
+				<field 	name="group2" type="usergroup" multiple="true"
+						label="MOD_PERGROUP_SELECT_GROUP"
+						default="0" 
+				/>
+				<field name="group2-active" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_ACTIVE_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field name="group2-type" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PERGROUP_VALIDATION_TYPE" description="">
+  					<option value="0">MOD_PERGROUP_NOT_IN_GROUP</option>
+  					<option value="1">MOD_PERGROUP_IN_GROUP</option>
+				</field>
+				<field name="group2-url" type="url" default="" label="MOD_PERGROUP_REDIRECT_GROUP_URL" description="" size="40" />
+				<field name="group2-menu" type="menuitem" default="" label="MOD_PERGROUP_REDIRECT_GROUP_MENU" description="" />
+				<field name="group2-redirect" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_REDIRECT_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field type="spacer" name="myspacer_2" label="MOD_PERGROUP_HTML_INPUT" />
+				<field name="group2-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field type="spacer" name="spasor_2" label="MOD_PERGROUP_CSS_INPUT" />
+				<field name="group2-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacer_2" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
+				<field name="group2-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacur_2" label="MOD_PERGROUP_PHP_INPUT"/>
+				<field name="group2-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="line2" hr="true" />
+				
+				<field 	name="group3" type="usergroup" multiple="true"
+						label="MOD_PERGROUP_SELECT_GROUP"
+						default="0" 
+				/>
+				<field name="group3-active" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_ACTIVE_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field name="group3-type" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PERGROUP_VALIDATION_TYPE" description="">
+  					<option value="0">MOD_PERGROUP_NOT_IN_GROUP</option>
+  					<option value="1">MOD_PERGROUP_IN_GROUP</option>
+				</field>
+				<field name="group3-url" type="url" default="" label="MOD_PERGROUP_REDIRECT_GROUP_URL" description="" size="40" />
+				<field name="group3-menu" type="menuitem" default="" label="MOD_PERGROUP_REDIRECT_GROUP_MENU" description="" />
+				<field name="group3-redirect" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_REDIRECT_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field type="spacer" name="myspacer_3" label="MOD_PERGROUP_HTML_INPUT" />
+				<field name="group3-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field type="spacer" name="spasor_3" label="MOD_PERGROUP_CSS_INPUT" />
+				<field name="group3-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacer_3" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
+				<field name="group3-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacur_3" label="MOD_PERGROUP_PHP_INPUT"/>
+				<field name="group3-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="line3" hr="true" />
+				
+				<field 	name="group4" type="usergroup" multiple="true"
+						label="MOD_PERGROUP_SELECT_GROUP"
+						default="0" 
+				/>
+				<field name="group4-active" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_ACTIVE_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field name="group4-type" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PERGROUP_VALIDATION_TYPE" description="">
+  					<option value="0">MOD_PERGROUP_NOT_IN_GROUP</option>
+  					<option value="1">MOD_PERGROUP_IN_GROUP</option>
+				</field>
+				<field name="group4-url" type="url" default="" label="MOD_PERGROUP_REDIRECT_GROUP_URL" description="" size="40" />
+				<field name="group4-menu" type="menuitem" default="" label="MOD_PERGROUP_REDIRECT_GROUP_MENU" description="" />
+				<field name="group4-redirect" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_REDIRECT_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field type="spacer" name="myspacer_4" label="MOD_PERGROUP_HTML_INPUT" />
+				<field name="group4-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field type="spacer" name="spasor_4" label="MOD_PERGROUP_CSS_INPUT" />
+				<field name="group4-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacer_4" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
+				<field name="group4-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacur_4" label="MOD_PERGROUP_PHP_INPUT"/>
+				<field name="group4-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="line4" hr="true" />
+				
+				<field 	name="group5" type="usergroup" multiple="true"
+						label="MOD_PERGROUP_SELECT_GROUP"
+						default="0" 
+				/>
+				<field name="group5-active" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_ACTIVE_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field name="group5-type" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PERGROUP_VALIDATION_TYPE" description="">
+  					<option value="0">MOD_PERGROUP_NOT_IN_GROUP</option>
+  					<option value="1">MOD_PERGROUP_IN_GROUP</option>
+				</field>
+				<field name="group5-url" type="url" default="" label="MOD_PERGROUP_REDIRECT_GROUP_URL" description="" size="40" />
+				<field name="group5-menu" type="menuitem" default="" label="MOD_PERGROUP_REDIRECT_GROUP_MENU" description="" />
+				<field name="group5-redirect" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_REDIRECT_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field type="spacer" name="myspacer_5" label="MOD_PERGROUP_HTML_INPUT" />
+				<field name="group5-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field type="spacer" name="spasor_5" label="MOD_PERGROUP_CSS_INPUT" />
+				<field name="group5-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacer_5" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
+				<field name="group5-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacur_5" label="MOD_PERGROUP_PHP_INPUT"/>
+				<field name="group5-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="line5" hr="true" />
+				
+				<field 	name="group6" type="usergroup" multiple="true"
+						label="MOD_PERGROUP_SELECT_GROUP"
+						default="0" 
+				/>
+				<field name="group6-active" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_ACTIVE_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field name="group6-type" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PERGROUP_VALIDATION_TYPE" description="">
+  					<option value="0">MOD_PERGROUP_NOT_IN_GROUP</option>
+  					<option value="1">MOD_PERGROUP_IN_GROUP</option>
+				</field>
+				<field name="group6-url" type="url" default="" label="MOD_PERGROUP_REDIRECT_GROUP_URL" description="" size="40" />
+				<field name="group6-menu" type="menuitem" default="" label="MOD_PERGROUP_REDIRECT_GROUP_MENU" description="" />
+				<field name="group6-redirect" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_REDIRECT_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field type="spacer" name="myspacer_6" label="MOD_PERGROUP_HTML_INPUT" />
+				<field name="group6-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field type="spacer" name="spasor_6" label="MOD_PERGROUP_CSS_INPUT" />
+				<field name="group6-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacer_6" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
+				<field name="group6-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacur_6" label="MOD_PERGROUP_PHP_INPUT"/>
+				<field name="group6-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="line6" hr="true" />
+				
+				<field 	name="group7" type="usergroup" multiple="true"
+						label="MOD_PERGROUP_SELECT_GROUP"
+						default="0" 
+				/>
+				<field name="group7-active" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_ACTIVE_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field name="group7-type" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PERGROUP_VALIDATION_TYPE" description="">
+  					<option value="0">MOD_PERGROUP_NOT_IN_GROUP</option>
+  					<option value="1">MOD_PERGROUP_IN_GROUP</option>
+				</field>
+				<field name="group7-url" type="url" default="" label="MOD_PERGROUP_REDIRECT_GROUP_URL" description="" size="40" />
+				<field name="group7-menu" type="menuitem" default="" label="MOD_PERGROUP_REDIRECT_GROUP_MENU" description="" />
+				<field name="group7-redirect" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_REDIRECT_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field type="spacer" name="myspacer_7" label="MOD_PERGROUP_HTML_INPUT" />
+				<field name="group7-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field type="spacer" name="spasor_7" label="MOD_PERGROUP_CSS_INPUT" />
+				<field name="group7-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacer_7" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
+				<field name="group7-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacur_7" label="MOD_PERGROUP_PHP_INPUT"/>
+				<field name="group7-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="line7" hr="true" />
+				
+				<field 	name="group8" type="usergroup" multiple="true"
+						label="MOD_PERGROUP_SELECT_GROUP"
+						default="0" 
+				/>
+				<field name="group8-active" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_ACTIVE_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field name="group8-type" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PERGROUP_VALIDATION_TYPE" description="">
+  					<option value="0">MOD_PERGROUP_NOT_IN_GROUP</option>
+  					<option value="1">MOD_PERGROUP_IN_GROUP</option>
+				</field>
+				<field name="group8-url" type="url" default="" label="MOD_PERGROUP_REDIRECT_GROUP_URL" description="" size="40" />
+				<field name="group8-menu" type="menuitem" default="" label="MOD_PERGROUP_REDIRECT_GROUP_MENU" description="" />
+				<field name="group8-redirect" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PERGROUP_REDIRECT_QUESTION" description="">
+  					<option value="0">MOD_PERGROUP_NO</option>
+  					<option value="1">MOD_PERGROUP_YES</option>
+				</field>
+				<field type="spacer" name="myspacer_8" label="MOD_PERGROUP_HTML_INPUT" />
+				<field name="group8-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field type="spacer" name="spasor_8" label="MOD_PERGROUP_CSS_INPUT" />
+				<field name="group8-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacer_8" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
+				<field name="group8-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field type="spacer" name="spacur_8" label="MOD_PERGROUP_PHP_INPUT"/>
+				<field name="group8-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="prepare_content"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="MOD_PERGROUP_PREPARE_CONTENT"
+					description=""
+					default="0">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="execution_direction"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="MOD_PERGROUP_EXECUTION_DIRECTION"
+					description=""
+					default="1">
+					<option value="1">MOD_PERGROUP_UP</option>
+					<option value="0">MOD_PERGROUP_DOWN</option>
+				</field>
+				<field name="separator" type="radio" default="0" label="MOD_PERGROUP_SEPERATOR" description="">
+  					<option value="0">MOD_PERGROUP_BREAK</option>
+  					<option value="1">MOD_PERGROUP_CLASS</option>
+  					<option value="2">MOD_PERGROUP_BOOTSTRAP</option>
+  					<option value="3">MOD_PERGROUP_DIV</option>
+				</field>
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>
