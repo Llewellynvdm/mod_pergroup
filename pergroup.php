@@ -34,11 +34,12 @@ class perGroup
 		// check if loged in
 		$this->userId 	= JFactory::getUser()->id;
 		if($this->userId){
-			// setup user details
+			// setup user groups
 			$this->userGroups 	= JUserHelper::getUserGroups($this->userId);
 		} else {
-			// setup user details
-			$this->userGroups 	= $this->params->get('group0');
+			$params_users = JComponentHelper::getParams('com_users');
+			// setup quest user groups
+			$this->userGroups 	= array($params_users->get('guest_usergroup'));
 		}
 		// check direction of execution
 		$up = $this->params->get('execution_direction');
