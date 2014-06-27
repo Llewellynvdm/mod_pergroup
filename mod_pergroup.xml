@@ -306,10 +306,11 @@
 					<option value="0">MOD_PERGROUP_DOWN</option>
 				</field>
 				<field name="separator" type="radio" default="0" label="MOD_PERGROUP_SEPERATOR" description="">
-  					<option value="0">MOD_PERGROUP_BREAK</option>
-  					<option value="1">MOD_PERGROUP_CLASS</option>
-  					<option value="2">MOD_PERGROUP_BOOTSTRAP</option>
-  					<option value="3">MOD_PERGROUP_DIV</option>
+					<option value="0">MOD_PERGROUP_NONE</option>
+  					<option value="1">MOD_PERGROUP_BREAK</option>
+  					<option value="2">MOD_PERGROUP_CLASS</option>
+  					<option value="3">MOD_PERGROUP_BOOTSTRAP</option>
+  					<option value="4">MOD_PERGROUP_DIV</option>
 				</field>
 				<field
 					name="layout"

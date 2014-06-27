@@ -15,17 +15,33 @@ $separator_value = $params->get('separator');
 ?>
 
 <?php if(is_array($module->results)): ?>
-<div>
 	<?php $i = 0; ?>
 	<?php foreach($module->results as $group_id => &$group): ?>
 		<?php if(is_array($group)): ?>
-        <?php foreach($group as $text): ?>
-			<?php if($counter): ?>
-				<?php echo '<br/>'; ?>
-			<?php endif; ?>
-			<?php echo ($prepare_content) ? JHtml::_('content.prepare', $text) : $text; $i++; ?>
-        <?php endforeach; ?>
+			<?php foreach($group as $text): ?>
+                <?php if($text): ?>
+                        
+						<?php if($separator_value): ?>
+                        	<?php if($separator_value == 1): ?>
+                            	<?php echo ($i) ? '<br/>' : ''; ?>
+                            <?php else: ?>
+                            	<div<?php echo ($separator_value == 2) ? ' class="separator"' : ''; echo ($separator_value == 3) ? ' class="jumbotron"' : ''; ?>>
+                            <?php endif; ?>
+                        <?php endif; ?>
+                        
+                        <!-- the main text -->
+                        <?php echo ($prepare_content) ? JHtml::_('content.prepare', $text) : $text; ?>
+                        
+                        <?php if($separator_value): ?>
+                        	<?php if($separator_value != 1): ?>
+                            	</div>
+                            <?php endif; ?>
+                        <?php endif ?>
+                        
+						<?php $i++; ?>
+                        
+            	<?php endif; ?>
+            <?php endforeach; ?>
 		<?php endif; ?>
 	<?php endforeach; ?>
-</div>
 <?php endif; ?>
