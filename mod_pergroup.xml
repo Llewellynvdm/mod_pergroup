@@ -296,6 +296,16 @@
 					<option value="0">JNO</option>
 				</field>
 				<field
+					name="first_found_content"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="MOD_PERGROUP_FIRST_FOUND_CONTENT"
+					description=""
+					default="1">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
 					name="execution_direction"
 					type="radio"
 					class="btn-group btn-group-yesno"

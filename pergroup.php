@@ -20,6 +20,7 @@ class perGroup
 	protected $document;
 	protected $jQuery_set;
 	protected $params;
+	protected $found 		= false;
 	
 	protected $range_low 	= 0;
 	protected $range_high 	= 8;
@@ -77,6 +78,10 @@ class perGroup
 				$app->redirect($this->results[$field_id]);
 				return true;
 			}
+			// if set so that not all content should be loaded, then break when firt data is found
+			if($this->found && $this->params->get('first_found_content')){
+				break;
+			}
 		}
 		return true;
 	}
@@ -107,6 +112,8 @@ class perGroup
 						}
 						// set result only if not a redirect
 						$text[] = $result;
+						$this->found = true;
+						break;
 					} else {
 						// when user is not in active group
 						$text[] = false;
@@ -120,6 +127,8 @@ class perGroup
 						}
 						// set result only if not a redirect
 						$text[] = $result;
+						$this->found = true;
+						break;
 					} else {
 						// when user is not in active group
 						$text[] = false;
