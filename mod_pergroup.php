@@ -10,7 +10,7 @@
 **/
 defined( '_JEXEC' ) or die;
 
-// Include the syndicate functions only once
+// Include the functions only once
 require_once __DIR__ . '/pergroup.php';
 
 // load the module class

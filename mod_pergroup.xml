@@ -50,13 +50,13 @@
   					<option value="1">MOD_PERGROUP_YES</option>
 				</field>
 				<field type="spacer" name="myspacer_0" label="MOD_PERGROUP_HTML_INPUT" />
-				<field name="group0-notice" label="" type="editor" width="95%" height="300" filter="safehtml"/>
+				<field name="group0-notice" label="" type="editor" width="95%" height="300" filter="raw"/>
 				<field type="spacer" name="spasor_0" label="MOD_PERGROUP_CSS_INPUT" />
-				<field name="group0-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group0-css" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacer_0" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
-				<field name="group0-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group0-js" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacur_0" label="MOD_PERGROUP_PHP_INPUT"/>
-				<field name="group0-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group0-php" label="" type="editor" width="95%" height="200" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="line0" hr="true" />
 				
 				<field 	name="group1" type="usergroup" multiple="true"
@@ -78,13 +78,13 @@
   					<option value="1">MOD_PERGROUP_YES</option>
 				</field>	
 				<field type="spacer" name="myspacer_1" label="MOD_PERGROUP_HTML_INPUT" />	
-				<field name="group1-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field name="group1-notice" label="" type="editor" width="95%" height="300" filter="raw" />
 				<field type="spacer" name="spasor_1" label="MOD_PERGROUP_CSS_INPUT" />
-				<field name="group1-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group1-css" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror"/>
 				<field type="spacer" name="spacer_1" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
-				<field name="group1-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group1-js" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror"/>
 				<field type="spacer" name="spacur_1" label="MOD_PERGROUP_PHP_INPUT"/>
-				<field name="group1-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group1-php" label="" type="editor" width="95%" height="200" filter="raw" editor="none|codemirror"/>
 				<field type="spacer" name="line1" hr="true" />
 				
 				<field 	name="group2" type="usergroup" multiple="true"
@@ -106,13 +106,13 @@
   					<option value="1">MOD_PERGROUP_YES</option>
 				</field>
 				<field type="spacer" name="myspacer_2" label="MOD_PERGROUP_HTML_INPUT" />
-				<field name="group2-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field name="group2-notice" label="" type="editor" width="95%" height="300" filter="raw" />
 				<field type="spacer" name="spasor_2" label="MOD_PERGROUP_CSS_INPUT" />
-				<field name="group2-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group2-css" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacer_2" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
-				<field name="group2-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group2-js" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacur_2" label="MOD_PERGROUP_PHP_INPUT"/>
-				<field name="group2-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group2-php" label="" type="editor" width="95%" height="200" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="line2" hr="true" />
 				
 				<field 	name="group3" type="usergroup" multiple="true"
@@ -134,13 +134,13 @@
   					<option value="1">MOD_PERGROUP_YES</option>
 				</field>
 				<field type="spacer" name="myspacer_3" label="MOD_PERGROUP_HTML_INPUT" />
-				<field name="group3-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field name="group3-notice" label="" type="editor" width="95%" height="300" filter="raw" />
 				<field type="spacer" name="spasor_3" label="MOD_PERGROUP_CSS_INPUT" />
-				<field name="group3-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group3-css" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacer_3" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
-				<field name="group3-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group3-js" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacur_3" label="MOD_PERGROUP_PHP_INPUT"/>
-				<field name="group3-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group3-php" label="" type="editor" width="95%" height="200" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="line3" hr="true" />
 				
 				<field 	name="group4" type="usergroup" multiple="true"
@@ -162,13 +162,13 @@
   					<option value="1">MOD_PERGROUP_YES</option>
 				</field>
 				<field type="spacer" name="myspacer_4" label="MOD_PERGROUP_HTML_INPUT" />
-				<field name="group4-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field name="group4-notice" label="" type="editor" width="95%" height="300" filter="raw" />
 				<field type="spacer" name="spasor_4" label="MOD_PERGROUP_CSS_INPUT" />
-				<field name="group4-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group4-css" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacer_4" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
-				<field name="group4-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group4-js" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacur_4" label="MOD_PERGROUP_PHP_INPUT"/>
-				<field name="group4-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group4-php" label="" type="editor" width="95%" height="200" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="line4" hr="true" />
 				
 				<field 	name="group5" type="usergroup" multiple="true"
@@ -190,13 +190,13 @@
   					<option value="1">MOD_PERGROUP_YES</option>
 				</field>
 				<field type="spacer" name="myspacer_5" label="MOD_PERGROUP_HTML_INPUT" />
-				<field name="group5-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field name="group5-notice" label="" type="editor" width="95%" height="300" filter="raw" />
 				<field type="spacer" name="spasor_5" label="MOD_PERGROUP_CSS_INPUT" />
-				<field name="group5-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group5-css" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacer_5" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
-				<field name="group5-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group5-js" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacur_5" label="MOD_PERGROUP_PHP_INPUT"/>
-				<field name="group5-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group5-php" label="" type="editor" width="95%" height="200" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="line5" hr="true" />
 				
 				<field 	name="group6" type="usergroup" multiple="true"
@@ -218,13 +218,13 @@
   					<option value="1">MOD_PERGROUP_YES</option>
 				</field>
 				<field type="spacer" name="myspacer_6" label="MOD_PERGROUP_HTML_INPUT" />
-				<field name="group6-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field name="group6-notice" label="" type="editor" width="95%" height="300" filter="raw" />
 				<field type="spacer" name="spasor_6" label="MOD_PERGROUP_CSS_INPUT" />
-				<field name="group6-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group6-css" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacer_6" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
-				<field name="group6-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group6-js" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacur_6" label="MOD_PERGROUP_PHP_INPUT"/>
-				<field name="group6-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group6-php" label="" type="editor" width="95%" height="200" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="line6" hr="true" />
 				
 				<field 	name="group7" type="usergroup" multiple="true"
@@ -246,13 +246,13 @@
   					<option value="1">MOD_PERGROUP_YES</option>
 				</field>
 				<field type="spacer" name="myspacer_7" label="MOD_PERGROUP_HTML_INPUT" />
-				<field name="group7-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field name="group7-notice" label="" type="editor" width="95%" height="300" filter="raw" />
 				<field type="spacer" name="spasor_7" label="MOD_PERGROUP_CSS_INPUT" />
-				<field name="group7-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group7-css" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacer_7" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
-				<field name="group7-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group7-js" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacur_7" label="MOD_PERGROUP_PHP_INPUT"/>
-				<field name="group7-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group7-php" label="" type="editor" width="95%" height="200" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="line7" hr="true" />
 				
 				<field 	name="group8" type="usergroup" multiple="true"
@@ -274,13 +274,13 @@
   					<option value="1">MOD_PERGROUP_YES</option>
 				</field>
 				<field type="spacer" name="myspacer_8" label="MOD_PERGROUP_HTML_INPUT" />
-				<field name="group8-notice" label="" type="editor" width="95%" height="300" filter="safehtml" />
+				<field name="group8-notice" label="" type="editor" width="95%" height="300" filter="raw" />
 				<field type="spacer" name="spasor_8" label="MOD_PERGROUP_CSS_INPUT" />
-				<field name="group8-css" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group8-css" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacer_8" label="MOD_PERGROUP_JAVASCRIPT_INPUT" />
-				<field name="group8-js" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group8-js" label="" type="editor" width="95%" height="100" filter="raw" editor="none|codemirror" />
 				<field type="spacer" name="spacur_8" label="MOD_PERGROUP_PHP_INPUT"/>
-				<field name="group8-php" label="" type="editor" width="95%" height="100" filter="raw" />
+				<field name="group8-php" label="" type="editor" width="95%" height="200" filter="raw" editor="none|codemirror" />
 				
 			</fieldset>
 			<fieldset

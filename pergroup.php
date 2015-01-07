@@ -165,7 +165,7 @@ class perGroup
 			$group_js 		= $this->params->get('group'.$id.'-js');
 			if ($group_js){
 				if (!$this->jQuery_set){
-					$this->document->addScript(JURI::base().'modules/mod_perGroup/js/jquery.js');
+					$this->document->addScript(JURI::base().'modules/mod_pergroup/js/jquery.js');
 					$this->jQuery_set = true;
 				}
 				$script = ''.$group_js.'';
